@@ -1,0 +1,6 @@
+p=int(input('enter principal amount:'))
+t=int(input('enter time period in years:'))
+r=float(input('enter rate of intrest:'))
+i=(p*t*r)/100
+tm=int(input('enter time tenure of EMI in months:'))
+print('emi per month is ',(p+i)/tm)
