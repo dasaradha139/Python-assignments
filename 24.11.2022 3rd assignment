@@ -1,0 +1,11 @@
+sno=int(input('enter student number:'))
+name=input('enter name:')
+gr=input('enter group:')
+M1=int(input('enter marks of 1st subject:'))
+M2=int(input('enter marks of 2nd subject:'))
+M3=int(input('enter marks of 3rd subject:'))
+print('student number:',sno,'\nstudent name:',name,'\nstudent group:',gr)
+if M1>=35 and M2>=35 and M3>=35:
+    print('result:pass')
+else:
+   print('result:fail')
