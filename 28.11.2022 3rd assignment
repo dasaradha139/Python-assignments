@@ -1,0 +1,7 @@
+amount=int(input('enter amount to withdraw::'))
+balance=30000
+if balance<amount:
+  print('There is no enough money to withdraw ...')
+else:
+  print(amount,'ammount is withdrawed. ')
+  print('balance amount is',balance-amount)
