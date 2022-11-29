@@ -1,0 +1,21 @@
+name=input('enter employee name:')
+des=input('enter employee designation:')
+sal=int(input('enter basic salary:'))
+da=int(input('enter daily allowance:'))
+ta=int(input('enter traveling allowance:'))
+ha=int(input('enter housing allowance:'))
+tsal=sal+da+ta+ha
+if tsal>100000:
+    tax=10*tsal/100
+elif tsal>50000 and tsal<100000:
+    tax=(7*tsal)/100
+elif tsal>40000 and tsal<50000:
+    tax=(4*tsal)/100
+elif tsal>20000 and tsal<40000:
+    tax=(2*tsal)/100
+else:
+    tax=0
+print('employee name:',name)
+print('designation:',des)
+print('total salary:',tsal)
+print('tax:',tax)
