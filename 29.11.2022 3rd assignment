@@ -1,0 +1,13 @@
+name=input('enter student name:')
+rno=int(input('enter student rollnumber:'))
+grp=input('enter student group:')
+m1=int(input('enter marks in 1st subject:'))
+m2=int(input('enter marks in 2nd subject:'))
+m3=int(input('enter marks in 3rd subject:'))
+print('student name:', name)
+print('student roll no:',rno)
+print('group:',grp)
+if m1>=35 and m2>=35 and m3>=35:
+    print('status: pass')
+else:
+    print('status: fail')
