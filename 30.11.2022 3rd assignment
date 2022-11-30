@@ -1,0 +1,3 @@
+u=int(input('enter no of units consumed:'))
+price=int(input('enter cost per unit:'))
+print('electricity bill:',u*price)
