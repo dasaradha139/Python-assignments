@@ -1,0 +1,51 @@
+cno=int(input('enter custumer number:'))
+name=input('enter customer name:')
+pno=int(input('enter custumer phone number:'))
+ad=input('emer customer address:')
+soapc=20
+ricec=500
+tpc=100
+oilc=50
+soap=int(input('enter no of soups:'))
+rice=int(input('enter no of kgs of rice:'))
+tp=int(input('no of tooth paste:'))
+oil=int(input('no of oil packets:'))
+bill=soap*soapc+rice*ricec+tpc*tp+oil*oilc
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+bill=bill+tax
+dis=0
+cou=input('enter coupons if any:')
+if cou=='DIWALI':
+    if bill>=5000:
+      dis=bill*10/100
+    elif bill>=3000:
+      dis=bill*6/100
+    elif bill>=1000:
+      dis=bill*4/100
+    else:
+      dis=0
+if cou=='CHRISMUS':
+    if bill>=3000:
+      dis=bill*20/100
+    elif bill>=2000:
+      dis=bill*10/100
+    elif bill>=1000:
+      dis=bill*5/100
+    else:
+      dis=0
+bill=bill-dis
+print('customer number:',cno)
+print('customer name:', name)
+print('customer phone number:',pno)
+print('customer address:',ad)
+print('tax:', tax)
+print('total bill:',bill)
