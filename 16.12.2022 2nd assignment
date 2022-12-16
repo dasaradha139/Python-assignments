@@ -1,0 +1,6 @@
+str=input('enter string:')
+co=0
+for i in str:
+    if i.isalpha()==1:
+        co=co+1
+print('no of alphabets:',co)
