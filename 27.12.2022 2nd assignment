@@ -1,0 +1,7 @@
+n=int(input('enter no of numbers:'))
+num=list(map(int,input('enter numbers:').split()))
+ele=int(input('enter number to search:'))
+flag=0
+for i in range(n):
+    if num[i]==ele:
+        print(i, end=' ')
