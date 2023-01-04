@@ -1,0 +1,19 @@
+l=[]
+r=int(input('enter no of rows:'))
+c=int(input('ener no of columns:'))
+for i in range(r):
+    m=[]
+    for j in range(c):
+        m.append(int(input('enter number:')))
+    l.append(m) 
+cou=0
+for i in range(r):
+    sum=0
+    for j in range(c):
+        sum=sum+l[i][j]
+    if sum==2:
+        cou=cou+1
+if cou==r:
+    print('coder targeted Matrix')
+else:
+    print('not a cost targeted Matrix')
