@@ -1,0 +1,17 @@
+n=int(input('Enter dimensions:'))
+l=[]
+for i in range(n):
+    m=[]
+    for j in range (n):
+        x=int(input('Enter a value:'))
+        m.append(x)
+    l.append(m)
+k=int(input('enter key:'))
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            l[i][j]=k
+        else:
+            l[i][j]=0
+for i in l:
+    print(i)
