@@ -1,0 +1,6 @@
+n=int(input('enter no of numbers:'))
+l=list(map(int,input('enter numbers:').split()))
+k=int(input('enter no of last numbers:'))
+m=l[n-k:]
+print('Max of last k numbers is:',max(m))
+print('Mini of last k numbers is:',min(m))
