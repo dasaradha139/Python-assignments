@@ -1,0 +1,10 @@
+str=input()
+l=[]
+for i in str:
+    l.append(i)
+l.sort(reverse=True)
+ne=""
+for i in l:
+    ne=ne+i
+num=int(ne)
+print(ne)
