@@ -1,0 +1,11 @@
+d={}
+n=int(input('enter no of student:'))
+for i in range(n):
+    name, status=input().split()
+    d[name]=status
+for i in range(n):
+    id=input()
+    if id in d:
+        print(id,d[id],'the exam')
+    else:
+        print('no result found')
