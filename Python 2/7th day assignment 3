@@ -1,0 +1,16 @@
+import math
+seive=[]
+m,n=map(int,input().split())
+m=m+1
+for i in range(0,n):
+    seive.append(1)
+x=int(math.sqrt(n))
+for i in range(2,x+1):
+    if seive[i]==1:
+        for j in range(i*i,n,i):
+            seive[j]=0
+count=0
+for i in range(m,n):
+    if seive[i]==1:
+        count=count+1
+print(count)
