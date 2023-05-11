@@ -1,0 +1,9 @@
+f,l=map(int,input().split())
+
+s=0
+
+for i in range(f,l+1,1):
+
+    s=s+i
+
+print(s)
